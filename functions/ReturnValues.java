@@ -24,6 +24,10 @@ public class ReturnValues {
     }
 
     public static double calculateArea(double lenght, double width){
+        if(lenght <= 0.0 || width <= 0.0) {
+            System.out.println("INVALID DIMENSIONS!");
+            System.exit(0);
+        }
         double area = lenght * width;
 
         return area;
